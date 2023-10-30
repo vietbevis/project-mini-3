@@ -108,7 +108,7 @@ fetch("https://dummyjson.com/products")
     const textSearch = document.querySelector("#textSearch");
 
     btnSearch.addEventListener("click", () => {
-      if (textSearch !== "") {
+      if (textSearch.value !== "") {
         dataSearchCategory = searchName(textSearch.value);
         displayProducts(dataSearchCategory);
       }
